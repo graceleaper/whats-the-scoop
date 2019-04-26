@@ -66,6 +66,10 @@ body {
   cursor: pointer;
 }
 
+/* .share-button:action .reveal-card {
+  transform: rotateY(180deg);
+} */
+
 .fact-check-button {
   border: none;
   color: white;
@@ -89,4 +93,12 @@ body {
   padding: 15px 32px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.clickbait_reveal {
+  color: rgb(208, 83, 44);
+}
+
+.real_news_reveal {
+  color: #4CAF50;
 }

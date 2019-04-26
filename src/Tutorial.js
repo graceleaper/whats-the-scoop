@@ -13,7 +13,7 @@ function Tutorial() {
         <h2>Tutorial</h2>
         <p>
           {/* Edit <code>src/App.js</code> and save to reload. */}
-          Hi! The goal of this game is to raise awareness on media literacy by
+          The goal of this game is to raise awareness on media literacy by
           practicing how to identify misinformation.
         </p>
 

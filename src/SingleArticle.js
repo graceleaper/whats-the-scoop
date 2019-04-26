@@ -6,7 +6,7 @@ export default function SingleArticle(props) {
         <div className="article-card">
         <h1>{props.title}</h1>
         {/* <img alt='new image here' src={props.urlToImage} /> */}
-        <p>{props.description}</p>
+        <p>{props.content}</p>
         <img className="article-image" alt="new img here" src={props.urlToImage} />
         <p>{props.url}</p>
         <button className="share-button">Share</button>

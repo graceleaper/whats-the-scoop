@@ -55,7 +55,7 @@ export default class Quiz extends Component {
           return (
             <SingleArticle key={index}
             title={article.title}
-            description={article.description}
+            content={article.content}
             urlToImage={article.urlToImage}
             url={article.url}
             />

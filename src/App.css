@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #e9ebee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+body {
+  background-color: #e9ebee;
 }
 
 .App-link {
@@ -30,4 +34,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.all-articles {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card {
+  padding: 2em;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 3em;
+  text-align: center;
+  -webkit-box-shadow: 7px 6px 5px 0px rgba(230, 230, 230, 1);
+  -moz-box-shadow: 7px 6px 5px 0px rgba(230, 230, 230, 1);
+  box-shadow: 7px 6px 5px 0px rgba(230, 230, 230, 1);
+}
+
+.article-image {
+  height: 300px;
 }

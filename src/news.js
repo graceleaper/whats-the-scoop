@@ -5,7 +5,7 @@ const reliableNews =
 
 const clickbait =
 'https://newsapi.org/v2/top-headlines?' +
-          'sources=buzzfeed&' +
+          'sources=mashable&' +
           'apiKey=1dd41cbc8a9142ccac472a5790494164'
 
 export async function getRealNews() {

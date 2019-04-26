@@ -9,6 +9,8 @@ export default function SingleArticle(props) {
         <p>{props.description}</p>
         <img className="article-image" alt="new img here" src={props.urlToImage} />
         <p>{props.url}</p>
+        <button className="share-button">Share</button>
+        <button className="fact-check-button">Fact-Check</button>
       </div>
     );
 }

@@ -50,7 +50,7 @@ export default class Quiz extends Component {
   render() {
     return (
       <div className="all-articles">
-        <h1> What's the Scoop?</h1>
+        <h1 className="logo"> What's the Scoop?</h1>
         {this.state.articles.map((article, index) => {
           return (
             <SingleArticle key={index}

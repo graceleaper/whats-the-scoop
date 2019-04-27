@@ -5,7 +5,8 @@ const reliableNews =
           'apiKey=1dd41cbc8a9142ccac472a5790494164'
 
 const clickbait =
-'https://newsapi.org/v2/top-headlines?' +
+'https://newsapi.org/v2/everything?' +
+          'q=culture&' +
           'sources=mashable&' +
           'pageSize=6&' +
           'apiKey=1dd41cbc8a9142ccac472a5790494164'

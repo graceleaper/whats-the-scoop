@@ -36,6 +36,10 @@ body {
   }
 }
 
+.logo {
+  font-family: 'Abril Fatface', cursive;
+}
+
 .all-articles {
   text-align: center;
   display: flex;
@@ -85,6 +89,12 @@ body {
   cursor: pointer;
 }
 
+.reveal-card {
+  background-color: rgb(230, 233, 255);
+  margin: 10px;
+  padding: 10px;
+}
+
 .responsive_gif {
   height: 400px;
 }
@@ -122,6 +132,10 @@ body {
 
   h1 {
     font-size: 1em;
+  }
+
+  .logo {
+    font-size: 2em;
   }
 
   .article-image {

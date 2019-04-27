@@ -7,7 +7,7 @@ function Tutorial() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>What's the Scoop?</h1>
+        <h1 className="logo">What's the Scoop?</h1>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <img className="responsive_gif" alt="logo here" src={require('./animat-responsive-color.gif')} />
         <h2>Tutorial</h2>

@@ -24,7 +24,7 @@ export default class SingleArticle extends React.Component {
           {/* <img alt='new image here' src={props.urlToImage} /> */}
           <p>{this.props.content}</p>
           <img className="article-image" alt="new img here" src={this.props.urlToImage} />
-          <p>{this.props.url}</p>
+          {/* <p>{this.props.url}</p> */}
           <button onClick={this.handleClick} className="share-button">Share</button>
           {/* {this.state.revealCard ? <RevealCard url={this.props.url}/> : null} */}
           <button onClick={this.handleClick} className="fact-check-button">Fact-Check</button>

@@ -1,12 +1,15 @@
 const reliableNews =
 'https://newsapi.org/v2/top-headlines?' +
           'sources=the-new-york-times&' +
+          'pageSize=6&' +
           'apiKey=1dd41cbc8a9142ccac472a5790494164'
 
 const clickbait =
 'https://newsapi.org/v2/top-headlines?' +
           'sources=mashable&' +
+          'pageSize=6&' +
           'apiKey=1dd41cbc8a9142ccac472a5790494164'
+
 
 export async function getRealNews() {
   let result = await fetch(reliableNews).then(response => response.json());

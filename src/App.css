@@ -43,6 +43,7 @@ body {
 }
 
 .article-card {
+  justify-content: center;
   padding: 2em;
   width: 50%;
   margin-left: 25%;
@@ -54,6 +55,10 @@ body {
 
 .article-image {
   height: 300px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .share-button {
@@ -101,4 +106,38 @@ body {
 
 .real_news_reveal {
   color: #4CAF50;
+}
+
+@media only screen and (max-width: 375px) {
+
+  .all-articles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .article-image {
+    width: 265px;
+    height: 165px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .article-card {
+    align-items: center;
+    padding: 2em;
+    width: 70%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+  }
+
 }

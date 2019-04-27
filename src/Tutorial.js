@@ -9,7 +9,7 @@ function Tutorial() {
       <header className="App-header">
         <h1 className="logo">What's the Scoop?</h1>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <img className="responsive_gif" alt="logo here" src={require('./animat-responsive-color.gif')} />
+        <img className="responsive_gif" alt="logo here" src={require('./animat-search-color.gif')} />
         <h2>Tutorial</h2>
         <p>
           {/* Edit <code>src/App.js</code> and save to reload. */}

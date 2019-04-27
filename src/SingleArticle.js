@@ -21,14 +21,12 @@ export default class SingleArticle extends React.Component {
     return (
           <div className="article-card">
           <h1>{this.props.title}</h1>
-          {/* <img alt='new image here' src={props.urlToImage} /> */}
-          <p>{this.props.content}</p>
           <img className="article-image" alt="new img here" src={this.props.urlToImage} />
-          {/* <p>{this.props.url}</p> */}
+          <p>{this.props.content}</p>
           <button onClick={this.handleClick} className="share-button">Share</button>
           {/* {this.state.revealCard ? <RevealCard url={this.props.url}/> : null} */}
           <button onClick={this.handleClick} className="fact-check-button">Fact-Check</button>
-          {this.state.revealCard ? <RevealCard url={this.props.url}/> : null}
+          {this.state.revealCard ? <RevealCard source={this.props.source} url={this.props.url}/> : null}
         </div>
       );
   }  

@@ -58,6 +58,7 @@ export default class Quiz extends Component {
             content={article.content}
             urlToImage={article.urlToImage}
             url={article.url}
+            source={article.source.name}
             />
           )
         })}

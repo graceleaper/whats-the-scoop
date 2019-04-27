@@ -108,6 +108,10 @@ body {
   color: #4CAF50;
 }
 
+.check-mark, .searching {
+  width: 100px;
+}
+
 @media only screen and (max-width: 375px) {
 
   .all-articles {

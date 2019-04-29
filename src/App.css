@@ -97,7 +97,8 @@ button {
 }
 
 .article-image {
-  height: 300px;
+  width: 100%;
+  position: relative;
   margin-bottom: 20px;
   display: block;
   margin-left: auto;

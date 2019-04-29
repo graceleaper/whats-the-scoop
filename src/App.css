@@ -14,7 +14,15 @@
   font-family: 'Lora', serif;
 }
 
-body {
+html {
+  background: url(./newspapers.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html .all-articles{
   background-color: rgb(228, 228, 228);
 }
 
@@ -25,18 +33,12 @@ h2 {
 
 p {
   font-family: 'Lora', serif;
+  font-size: 1.5em;
 }
 
 .front-image-container {
   position: relative;
   text-align: center;
-}
-
-.newspapers {
-  width: 100%;
-  position: relative;
-  margin-left:0;
-  margin-right: 0;
 }
 
 .centered-title {
@@ -45,10 +47,6 @@ p {
   font-weight: bold;
   font-family: 'Lora', serif;
   padding: 0.5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .App-link {
@@ -61,10 +59,13 @@ p {
 }
 
 .tutorial-guide {
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 0.5em;
   background-color: rgb(244, 244, 244);
+  opacity: 0.8;
   padding: 1em;
-  margin: -0.5em 8% 2em 8%;
+  margin-bottom: 2em;
 }
 
 button {
@@ -163,11 +164,6 @@ button {
 
 @media only screen and (max-width: 375px) {
 
-  .centered-title {
-    width: 80%;
-    font-size: 2em;
-  }
-
   .all-articles {
     text-align: center;
     display: flex;
@@ -175,11 +171,7 @@ button {
   }
 
   h1 {
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 1em;
+    font-size: 2em;
   }
 
   .logo {

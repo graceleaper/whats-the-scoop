@@ -7,10 +7,10 @@ function Tutorial() {
     <div className="App">
       <header>
         <div className="front-image-container">
-          <img
+          {/* <img
             className="newspapers"
             alt="newspaper"
-            src={require("./newspapers.jpg")}></img>
+            src={require("./newspapers.jpg")}></img> */}
             <h1 className="centered-title">What's the Scoop?</h1>
         </div>
         <div className="tutorial-guide">

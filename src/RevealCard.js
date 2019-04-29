@@ -12,7 +12,7 @@ export default class RevealCard extends React.Component {
   render() {
     return (
       <div className="reveal-card">
-        {this.props.url.includes("nytimes") ? (
+        {(this.props.url.includes("businessinsider") || this.props.url.includes("nytimes")) ? (
           <CredibleCard source={this.props.source} url={this.props.url} />
         ) : (
           <UnreliableCard source={this.props.source} url={this.props.url} />

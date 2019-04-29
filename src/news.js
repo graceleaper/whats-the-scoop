@@ -1,6 +1,6 @@
 const reliableNews =
   "https://newsapi.org/v2/top-headlines?" +
-  "sources=the-new-york-times&" +
+  "sources=the-new-york-times,business-insider&" +
   "pageSize=10&" +
   "apiKey=1dd41cbc8a9142ccac472a5790494164";
 

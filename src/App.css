@@ -2,42 +2,77 @@
   text-align: center;
 }
 
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-} */
-
 .App-header {
-  background-color: #e9ebee;
+  background-color: rgb(227, 227, 227);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: rgb(80, 85, 75);
+  font-family: 'Lora', serif;
 }
 
 body {
-  background-color: #dfdfdf;
+  background-color: rgb(228, 228, 228);
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 3em;
+}
+
+p {
+  font-family: 'Lora', serif;
+}
+
+.front-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.newspapers {
+  width: 100%;
+  position: relative;
+  margin-left:0;
+  margin-right: 0;
+}
+
+.centered-title {
+  font-size: 4em;
+  color: white;
+  font-weight: bold;
+  font-family: 'Lora', serif;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  font-family: 'Lora', serif;
+  font-weight: bold;
 }
 
-.logo {
-  font-family: 'Abril Fatface', cursive;
+.tutorial-guide {
+  border-radius: 0.5em;
+  background-color: rgb(244, 244, 244);
+  padding: 1em;
+  margin: -0.5em 8% 2em 8%;
+}
+
+button {
+  letter-spacing: 3px;
+}
+
+.start {
+  border-radius: 8px;
 }
 
 .all-articles {
@@ -47,6 +82,7 @@ body {
 }
 
 .article-card {
+  border-radius: 10px;
   justify-content: center;
   padding: 2em;
   width: 50%;
@@ -55,6 +91,8 @@ body {
   margin-bottom: 3em;
   text-align: center;
   background-color: rgb(244, 244, 244);
+  box-shadow: -1px 2px 24px 12px rgba(201,201,201,1);
+
 }
 
 .article-image {
@@ -71,13 +109,10 @@ body {
   background-color: #4CAF50;
   font-size: 16px;
   margin: 4px 2px;
-  padding: 15px 32px;
+  padding: 10px 30px;
   cursor: pointer;
+  border-radius: 8px;
 }
-
-/* .share-button:action .reveal-card {
-  transform: rotateY(180deg);
-} */
 
 .fact-check-button {
   border: none;
@@ -85,12 +120,14 @@ body {
   background-color: rgb(211, 122, 122);
   font-size: 16px;
   margin: 4px 2px;
-  padding: 15px 32px;
+  padding: 10px 30px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .reveal-card {
-  background-color: rgb(230, 233, 255);
+  border-radius: 15px;
+  background-color: rgb(230, 230, 230);
   margin: 10px;
   padding: 10px;
 }
@@ -111,10 +148,12 @@ body {
 }
 
 .clickbait_reveal {
+  font-family: 'Hind Guntur', sans-serif;
   color: rgb(208, 83, 44);
 }
 
 .real_news_reveal {
+  font-family: 'Hind Guntur', sans-serif;
   color: #4CAF50;
 }
 
@@ -123,6 +162,11 @@ body {
 }
 
 @media only screen and (max-width: 375px) {
+
+  .centered-title {
+    width: 80%;
+    font-size: 2em;
+  }
 
   .all-articles {
     text-align: center;
@@ -134,12 +178,16 @@ body {
     font-size: 1em;
   }
 
+  h2 {
+    font-size: 1em;
+  }
+
   .logo {
     font-size: 2em;
   }
 
   .article-image {
-    width: 265px;
+    width: 100%;
     height: 165px;
     display: block;
     margin-left: auto;
@@ -151,11 +199,11 @@ body {
     align-items: center;
     padding: 2em;
     width: 70%;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     margin-bottom: 5%;
     text-align: center;
     background-color: rgb(244, 244, 244);
   }
-
 }

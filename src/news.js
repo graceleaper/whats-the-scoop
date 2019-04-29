@@ -1,21 +1,20 @@
 const reliableNews =
-'https://newsapi.org/v2/top-headlines?' +
-          'sources=the-new-york-times&' +
-          'pageSize=6&' +
-          'apiKey=1dd41cbc8a9142ccac472a5790494164'
+  "https://newsapi.org/v2/top-headlines?" +
+  "sources=the-new-york-times&" +
+  "pageSize=10&" +
+  "apiKey=1dd41cbc8a9142ccac472a5790494164";
 
 const clickbait =
-'https://newsapi.org/v2/everything?' +
-          'q=culture&' +
-          'sources=mashable&' +
-          'pageSize=6&' +
-          'apiKey=1dd41cbc8a9142ccac472a5790494164'
-
+  "https://newsapi.org/v2/everything?" +
+  "sources=mashable&" +
+  "q=culture NOT porn NOT kiss&" +
+  "pageSize=10&" +
+  "apiKey=1dd41cbc8a9142ccac472a5790494164";
 
 export async function getRealNews() {
-  let result = await fetch(reliableNews).then(response => response.json());
-  let result2 = await fetch(clickbait).then(response => response.json());
-  let results = result.articles;
-  let results2 = result2.articles
-  return results.concat(results2);
+  let realNewsResponse = await fetch(reliableNews).then(response => response.json());
+  let unreliableNewsResponse = await fetch(clickbait).then(response => response.json());
+  let realNews = realNewsResponse.articles;
+  let unreliableNews = unreliableNewsResponse.articles;
+  return realNews.concat(unreliableNews);
 }

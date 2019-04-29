@@ -18,13 +18,13 @@ export default class SingleArticle extends React.Component {
   }
 
   render() {
+
     return (
-          <div className="article-card">
+          <div className="article-card" background={this.props.urlToImage}>
           <h1>{this.props.title}</h1>
           <img className="article-image" alt="new img here" src={this.props.urlToImage} />
-          <p>{this.props.content}</p>
+          <p>{this.props.description}</p>
           <button onClick={this.handleClick} className="share-button">Share</button>
-          {/* {this.state.revealCard ? <RevealCard url={this.props.url}/> : null} */}
           <button onClick={this.handleClick} className="fact-check-button">Fact-Check</button>
           {this.state.revealCard ? <RevealCard source={this.props.source} url={this.props.url}/> : null}
         </div>

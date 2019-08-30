@@ -1,14 +1,14 @@
 const reliableNews =
   "https://newsapi.org/v2/top-headlines?" +
   "sources=the-new-york-times,business-insider&" +
-  "pageSize=10&" +
+  "pageSize=5&" +
   "apiKey=1dd41cbc8a9142ccac472a5790494164";
 
 const clickbait =
   "https://newsapi.org/v2/everything?" +
   "sources=mashable&" +
   "q=culture NOT porn NOT kiss&" +
-  "pageSize=10&" +
+  "pageSize=5&" +
   "apiKey=1dd41cbc8a9142ccac472a5790494164";
 
 export async function getRealNews() {

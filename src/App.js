@@ -8,7 +8,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
+    <div>
         <Switch>
             <Route exact path="/" component={Tutorial} />
             <Route exact path="/quiz" component={Quiz} />
